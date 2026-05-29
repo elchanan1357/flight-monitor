@@ -11,7 +11,9 @@
   "type": "module",
   "main": "src/app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "npx tsx src/app.ts",
+    "dev": "npx nodemon --exec tsx src/app.ts"
   },
   "dependencies": {
     "cors": "^2.8.6",
