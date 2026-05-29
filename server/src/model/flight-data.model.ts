@@ -1,4 +1,4 @@
-import { FlightDataType } from '@/types/flight-data.type';
+import { FlightDataType } from '@/types/types';
 import mongoose from 'mongoose';
 
 const flightDataSchema = new mongoose.Schema<FlightDataType>({
@@ -8,7 +8,7 @@ const flightDataSchema = new mongoose.Schema<FlightDataType>({
         min: 0,
         max: 3000,
     },
-    his: {
+    hsi: {
         type: Number,
         required: true,
         min: 0,
