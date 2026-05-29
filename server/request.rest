@@ -1,0 +1,14 @@
+###
+POST  http://localhost:3000/api/flight-data
+Content-Type: application/json
+
+{
+   "altitude": 0,
+   "hsi": 0,
+   "adi": -101
+}
+
+###
+GET  http://localhost:3000/api/flight-data
+Content-Type: application/json 
+
