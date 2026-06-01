@@ -5,7 +5,7 @@ interface Props {
   value: number;
 }
 
-export const ADIGauge: FC<Props> = ({ value = 0 }) => {
+export const ADIGauge: FC<Props> = ({ value }) => {
   const boundedValue = Math.min(Math.max(value, -100), 100);
 
   const getFillColor = () => {
@@ -13,7 +13,7 @@ export const ADIGauge: FC<Props> = ({ value = 0 }) => {
     if (boundedValue === 100) return "#2563eb";
     return "white";
   };
-  
+
   return (
     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <Typography

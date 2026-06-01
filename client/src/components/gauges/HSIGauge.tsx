@@ -5,7 +5,7 @@ interface Props {
   value: number;
 }
 
-export const HSIGauge: FC<Props> = ({ value = 0 }) => {
+export const HSIGauge: FC<Props> = ({ value }) => {
   const boundedValue = Math.min(Math.max(value, 0), 360);
   const x = 90;
   const y = 90;

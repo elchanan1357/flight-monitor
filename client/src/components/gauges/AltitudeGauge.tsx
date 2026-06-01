@@ -5,7 +5,7 @@ interface Props {
   value: number;
 }
 
-export const AltitudeGauge: FC<Props> = ({ value = 0 }) => {
+export const AltitudeGauge: FC<Props> = ({ value  }) => {
   const boundedValue = Math.min(Math.max(value, 0), 3000);
   const heightPercent = (boundedValue / 3000) * 100;
   const ticks = [3000, 2000, 1000, 0];
